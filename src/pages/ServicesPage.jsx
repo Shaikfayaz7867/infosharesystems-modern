@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SectionTitle from '../components/ui/SectionTitle';
+import SectionTitle from '../components/UI/SectionTitle';
 import ServicesSection from '../components/sections/ServicesSection';
 import CtaSection from '../components/sections/CtaSection';
 import { 
