@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SectionTitle from '../components/ui/SectionTitle';
+import SectionTitle from '../components/UI/SectionTitle';
 import AboutSection from '../components/sections/AboutSection';
 import CtaSection from '../components/sections/CtaSection';
 import { FaAward, FaUsers, FaProjectDiagram, FaGlobe } from 'react-icons/fa';
