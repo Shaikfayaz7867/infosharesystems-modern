@@ -1,0 +1,9 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Logo Shape -->
+  <rect x="10" y="10" width="30" height="30" rx="5" fill="#003e5e"/>
+  <rect x="20" y="10" width="30" height="30" rx="5" fill="#0065A1" fill-opacity="0.8"/>
+  <rect x="30" y="10" width="30" height="30" rx="5" fill="#ff5722" fill-opacity="0.9"/>
+  
+  <!-- Company Name -->
+  <text x="70" y="30" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#003e5e">InfoShare Systems</text>
+</svg>

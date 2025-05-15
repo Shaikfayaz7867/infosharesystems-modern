@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-dark bg-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+@layer components {
+  /* Common utility classes */
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+  
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-2.5 rounded-md font-medium transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark hover:shadow-hover;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary-dark hover:shadow-hover;
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  /* Animated link */
+  .animated-link {
+    @apply relative inline-block;
+  }
+  
+  .animated-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .animated-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-lg shadow-smooth transition-all duration-300 hover:shadow-hover;
+  }
+  
+  /* Animation classes */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
